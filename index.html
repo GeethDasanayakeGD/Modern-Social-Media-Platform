@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">SocialApp</h1>
+            <div class="nav-links">
+                <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container main-container">
+        <!-- Create Post Section -->
+        <div class="card create-post">
+            <h3>Create Post</h3>
+            <textarea placeholder="What’s on your mind?"></textarea>
+            <div class="file-upload">
+                <label for="file-input" class="file-label">
+                    <i class="fas fa-image"></i> Choose Image
+                </label>
+                <input type="file" id="file-input" accept="image/*">
+                <span class="file-name">No file chosen</span>
+            </div>
+            <button class="btn post-btn">Post</button>
+        </div>
+
+        <!-- Posts Section -->
+        <div id="posts">
+            <!-- Posts will be dynamically added here -->
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Friends List -->
+            <div class="card friends-list">
+                <h3>Friends</h3>
+                <div class="friend">
+                    <img src="assets/profile-pics/alice.jpg" alt="Friend">
+                    <div class="friend-info">
+                        <span class="username">Alice Johnson</span>
+                        <span class="status online">Online</span>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="assets/profile-pics/bob.jpg" alt="Friend">
+                    <div class="friend-info">
+                        <span class="username">Bob Smith</span>
+                        <span class="status offline">Offline</span>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="assets/profile-pics/charlie.jpg" alt="Friend">
+                    <div class="friend-info">
+                        <span class="username">Charlie Brown</span>
+                        <span class="status online">Online</span>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="assets/profile-pics/diana.jpg" alt="Friend">
+                    <div class="friend-info">
+                        <span class="username">Diana Prince</span>
+                        <span class="status offline">Offline</span>
+                    </div>
+                </div>
+                <div class="friend">
+                    <img src="assets/profile-pics/ethan.jpg" alt="Friend">
+                    <div class="friend-info">
+                        <span class="username">Ethan Hunt</span>
+                        <span class="status online">Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Suggested Users -->
+            <div class="card">
+                <h3>Suggested Users</h3>
+                <div class="user-suggestion">
+                    <img src="assets/profile-pics/john.jpg" alt="User">
+                    <div class="user-info">
+                        <span class="username">John Doe</span>
+                        <button class="btn follow-btn">Follow</button>
+                    </div>
+                </div>
+                <!-- Add more suggested users here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

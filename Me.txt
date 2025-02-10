@@ -1,0 +1,24 @@
+social-app/
+│
+├── assets/
+│   ├── profile-pics/
+│   │   ├── alice.jpg
+│   │   ├── bob.jpg
+│   │   ├── charlie.jpg
+│   │   ├── diana.jpg
+│   │   ├── ethan.jpg
+│   ├── post-images/
+│   │   ├── post1.jpg
+│   │   ├── post2.jpg
+│   │   ├── post3.jpg
+│   │   ├── post4.jpg
+│   │   ├── post5.jpg
+│   │   ├── post6.jpg
+│   │   ├── post7.jpg
+│   │   ├── post8.jpg
+│   │   ├── post9.jpg
+│   │   ├── post10.jpg
+│
+├── index.html
+├── style.css
+├── script.js
